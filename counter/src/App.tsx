@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import cn from '../node_modules/classnames';
 
-const App = function (): JSX.Element {
+const Counter = function (): JSX.Element {
   const [counter, setCounter] = useState<number>(0);
   const [evenOdd, setEvenOdd] = useState<string>('четное');
 
@@ -37,4 +37,4 @@ const App = function (): JSX.Element {
   );
 };
 
-export default App;
+export default Counter;
