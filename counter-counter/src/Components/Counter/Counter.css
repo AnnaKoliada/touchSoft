@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  margin: 3rem auto;
+  max-width: 25rem;
+  padding: 1rem 0;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.evenOdd {
+  width: 5rem;
+  margin: 0.5rem;
+  background-color: white;
+}
+.number {
+  background-color: white;
+}
+.number,
+.buttons div,
+.evenOdd {
+  border: 1px solid black;
+  padding: 1rem;
+}
+.blue {
+  background-color: rgb(84, 84, 230);
+}
+
+.buttons div {
+  background-color: #dedede;
+  border-radius: 0.5rem;
+  box-shadow: 1px -2px 7px 0px;
+  margin: 0.2rem;
+}
+
+.buttons div:hover {
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.buttons div:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+.buttons div:active {
+  background-color: #333;
+  border-color: rgb(70, 68, 68);
+  color: #eee;
+}
+.green {
+  background-color: rgb(10, 240, 125);
+}
+.buttons div.disabled {
+  pointer-events: none;
+  background-color: #aaa;
+  box-shadow: inset 0px -1px 7px 0px;
+}
+.delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  cursor: pointer;
+}

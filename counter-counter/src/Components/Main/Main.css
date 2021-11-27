@@ -1,0 +1,42 @@
+.main {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.main-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-buttons div {
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: #dedede;
+  border-radius: 0.5rem;
+  box-shadow: 1px -2px 7px 0px;
+  margin: 0.2rem;
+}
+.main-buttons div:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+.main-buttons div:active {
+  background-color: #333;
+  border-color: rgb(70, 68, 68);
+  color: #eee;
+}
+.main-addCounter:hover,
+.main-reset:hover {
+  background-color: #aaa;
+  cursor: pointer;
+}
+.main-reset {
+}
+.counters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
